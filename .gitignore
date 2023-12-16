@@ -2,3 +2,4 @@
 .wireit/
 dist/
 node_modules/
+*.tsbuildinfo
