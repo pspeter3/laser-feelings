@@ -5,5 +5,13 @@
   "scripts": {
     "test": "wireit"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "wireit": "^0.14.1"
+  },
+  "wireit": {
+    "test": {
+      "command": "echo test"      
+    }
+  }
 }
