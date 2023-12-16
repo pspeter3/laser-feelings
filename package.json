@@ -3,15 +3,20 @@
   "private": true,
   "description": "Lasers & Feelings App",
   "scripts": {
+    "start": "parcel",
     "test": "wireit"
   },
   "license": "MIT",
   "devDependencies": {
+    "parcel": "^2.10.3",
     "wireit": "^0.14.1"
   },
+  "source": [
+    "src/index.html"
+  ],
   "wireit": {
     "test": {
-      "command": "echo test"      
+      "command": "echo test"
     }
   }
 }

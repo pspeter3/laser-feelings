@@ -1,2 +1,4 @@
+.parcel-cache/
 .wireit/
+dist/
 node_modules/
