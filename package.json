@@ -48,13 +48,13 @@
       ]
     },
     "fix:format": {
-      "command": "prettier --cache --write 'src/**/*' '*.{md,ts}'",
+      "command": "prettier --cache --write '.github/**/*' 'src/**/*' '*.{md,ts}'",
       "dependencies": [
         "fix:lint"
       ]
     },
     "fix:lint": {
-      "command": "eslint --fix --cache 'src/**/*.{ts,tsx}'"
+      "command": "eslint --fix --cache 'src/**/*.ts'"
     },
     "test": {
       "dependencies": [
@@ -64,7 +64,7 @@
       ]
     },
     "test:format": {
-      "command": "prettier --cache --check 'src/**/*' '*.{md,ts}'",
+      "command": "prettier --cache --check '.github/**/*' 'src/**/*' '*.{md,ts}'",
       "files": [
         "src/**/*",
         "*.{md,ts}",
@@ -73,7 +73,7 @@
       "output": []
     },
     "test:lint": {
-      "command": "eslint --color --cache 'src/**/*.{ts,tsx}'",
+      "command": "eslint --color --cache 'src/**/*.ts'",
       "files": [
         "src/**/*.{ts,tsx}"
       ],
