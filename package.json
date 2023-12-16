@@ -3,20 +3,41 @@
   "private": true,
   "description": "Lasers & Feelings App",
   "scripts": {
+    "fix": "wireit",
     "start": "parcel",
     "test": "wireit"
   },
   "license": "MIT",
   "devDependencies": {
     "parcel": "^2.10.3",
+    "prettier": "^3.1.1",
     "wireit": "^0.14.1"
   },
   "source": [
     "src/index.html"
   ],
   "wireit": {
+    "fix": {
+      "dependencies": [
+        "fix:format"
+      ]
+    },
+    "fix:format": {
+      "command": "prettier --cache --write 'src/**/*' '*.{md,ts}'"
+    },
     "test": {
-      "command": "echo test"
+      "dependencies": [
+        "test:format"
+      ]
+    },
+    "test:format": {
+      "command": "prettier --cache --check 'src/**/*' '*.{md,ts}'",
+      "files": [
+        "src/**/*",
+        "*.{md,ts}",
+        "!src/assets/*"
+      ],
+      "output": []
     }
   }
 }
