@@ -1,5 +1,6 @@
+.eslintcache
 .parcel-cache/
 .wireit/
+*.tsbuildinfo
 dist/
 node_modules/
-*.tsbuildinfo
