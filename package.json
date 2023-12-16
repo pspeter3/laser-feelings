@@ -1,0 +1,9 @@
+{
+  "name": "laser-feelings",
+  "private": true,
+  "description": "Lasers & Feelings App",
+  "scripts": {
+    "test": "wireit"
+  },
+  "license": "MIT"
+}
